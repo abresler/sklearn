@@ -2,9 +2,7 @@
 % Please edit documentation in R/sklearn.R
 \name{sk_cluster}
 \alias{sk_cluster}
-\title{SKLearn Clustering
-\href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster}{clustering functions}
-\href{https://scikit-learn.org/stable/modules/clustering.html#clustering}{clustering examples}}
+\title{SKLearn Clustering}
 \usage{
 sk_cluster()
 }
@@ -12,7 +10,11 @@ sk_cluster()
 python object
 }
 \description{
-SKLearn Clustering
-\href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster}{clustering functions}
-\href{https://scikit-learn.org/stable/modules/clustering.html#clustering}{clustering examples}
+Functions for unsupervised clustering algorithms.
+}
+\details{
+\itemize{
+\item \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster}{clustering functions}
+\item \href{https://scikit-learn.org/stable/modules/clustering.html#clustering}{clustering examples}
+}
 }

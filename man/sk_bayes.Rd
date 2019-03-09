@@ -3,8 +3,7 @@
 \name{sk_bayes}
 \alias{sk_bayes}
 \title{SK Bayes
-\href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes}{Bayes functions}
-\href{https://scikit-learn.org/stable/modules/naive_bayes.html#naive-bayes}{Bayes examples}}
+These are supervised learning methods based on applying Bayes’ theorem with strong (naive) feature independence assumptions.}
 \usage{
 sk_bayes()
 }
@@ -12,7 +11,29 @@ sk_bayes()
 python object
 }
 \description{
-SK Bayes
-\href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes}{Bayes functions}
-\href{https://scikit-learn.org/stable/modules/naive_bayes.html#naive-bayes}{Bayes examples}
+\itemize{
+\item \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes}{Bayes functions}
+\item \href{https://scikit-learn.org/stable/modules/naive_bayes.html#naive-bayes}{Bayes examples}
+}
+}
+\examples{
+library(tidyverse)
+library(sklearn)
+library(caret)
+bayes <- sk_bayes()
+X <- iris \%>\% as_tibble \%>\% select_if(is.numeric)
+target <- iris \%>\% pull(Species)
+gnb <- bayes$GaussianNB()
+model <- gnb$fit(X = as.matrix(X), y = target)
+predictions <- model$predict(X = X)
+result_table <- table(target, predictions)
+confusionMatrix(result_table)
+### Class probability
+options(digits = 3, scipen = 9999)
+df_prob <-
+gnb$predict_proba(X = X) \%>\%
+as_tibble() \%>\%
+set_names(target \%>\% unique())
+
+df_prob
 }
