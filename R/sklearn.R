@@ -33,6 +33,41 @@ import_sklearn <-
 #' @export
 #'
 #' @examples
+#' clusterer <- sk_cluster()
+#'
+#' ## DBSCAN
+#'
+#' dbscan <- clusterer$DBSCAN(algorithm = "auto", leaf_size = 10L)
+#' X <- iris %>% select_if(is.numeric) %>% as_tibble()
+#' model <- dbscan$fit(X = X)
+#' clusters <-
+#' model$fit_predict(X = X) + 1
+#' df <-
+#' iris %>%
+#' mutate(cluster = clusters) %>%
+#' as_tibble()
+#' df
+#'
+#' ## K-Means
+#' X <- iris %>% select_if(is.numeric) %>% as_tibble()
+#' iris_clusters <- clusterer$k_means(X = X, n_clusters = 3L,
+#' precompute_distances = T, init = "random", max_iter = 100L,
+#' return_n_iter = T)
+#' iris_clusters
+#' kmeans_centroids <-
+#' iris_clusters[[1]] %>%
+#' t() %>%
+#' as_tibble()
+#' cluster <- iris_clusters[[2]] + 1
+#' intertia <- iris_clusters[[3]]
+#' df_iris <-
+#' iris %>%
+#' as_tibble() %>%
+#' mutate(cluster)
+#' tibble(intertia, centroids = list(kmeans_centroids),
+#' dataClusters = list())
+
+
 sk_cluster <-
   function() {
     sklearn <- import_sklearn(assign_to_environment = F)
