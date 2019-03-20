@@ -3,8 +3,10 @@
 \name{sk_lm}
 \alias{sk_lm}
 \title{SK Learn LM
-\href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model}{linear model functions}
-\href{https://scikit-learn.org/stable/modules/linear_model.html#linear-model}{linear model examples}}
+\itemize{
+\item \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model}{linear model functions}
+\item \href{https://scikit-learn.org/stable/modules/linear_model.html#linear-model}{linear model examples}
+}}
 \usage{
 sk_lm()
 }
@@ -13,6 +15,8 @@ python object
 }
 \description{
 SK Learn LM
-\href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model}{linear model functions}
-\href{https://scikit-learn.org/stable/modules/linear_model.html#linear-model}{linear model examples}
+\itemize{
+\item \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model}{linear model functions}
+\item \href{https://scikit-learn.org/stable/modules/linear_model.html#linear-model}{linear model examples}
+}
 }

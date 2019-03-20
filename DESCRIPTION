@@ -1,6 +1,6 @@
 Package: sklearn
 Title: sklearn 
-Version: 0.1.0
+Version: 0.1.001
 Encoding: UTF-8
 Authors@R: c(person("Alex", "Bresler", role = c("aut", "cre"), email = "abresler@asbcllc.com"))
 Maintainer: Alex Bresler <abresler@asbcllc.com>
