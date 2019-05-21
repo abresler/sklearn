@@ -10,5 +10,8 @@ sk_datasets()
 python object
 }
 \description{
+Access to the sci-kit learn datasets
+}
+\details{
 \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets}{datasets}
 }

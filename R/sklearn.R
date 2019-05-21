@@ -12,7 +12,7 @@
 #' @examples
 import_sklearn <-
   function(assign_to_environment = T) {
-    sklearn <- reticulate::import("sklearn")
+    sklearn <- import("sklearn")
     !'sklearn' %>% exists() & assign_to_environment
     if (assign_to_environment) {
       assign('sklearn', sklearn, envir = .GlobalEnv)
@@ -78,6 +78,8 @@ sk_cluster <-
 
 
 #' SKLearn Data
+#'
+#' Access to the sci-kit learn datasets
 #'
 #' \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets}{datasets}
 #'

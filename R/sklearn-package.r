@@ -3,5 +3,6 @@
 #' @name sklearn
 #' @docType package
 #' @author Alex Bresler (abreslerb@@asbcllc.com)
-#' @import purrr reticulate dplyr
+#' @import purrr reticulate tibble dplyr
+
 NULL

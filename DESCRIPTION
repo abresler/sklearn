@@ -1,6 +1,6 @@
 Package: sklearn
-Title: sklearn 
-Version: 0.1.001
+Title: sklearn port
+Version: 0.1.0012
 Encoding: UTF-8
 Authors@R: c(person("Alex", "Bresler", role = c("aut", "cre"), email = "abresler@asbcllc.com"))
 Maintainer: Alex Bresler <abresler@asbcllc.com>
@@ -12,3 +12,4 @@ BugReports: https://github.com/abresler/sklearn/issues
 LazyData: true
 Suggests: testthat
 RoxygenNote: 6.1.1
+Imports: purrr, reticulate, tibble, dplyr
