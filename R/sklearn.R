@@ -503,6 +503,20 @@ sk_feature_selection <-
     obj
   }
 
+#' SK Feature extraction
+#'
+#' @return python object
+#' @export
+#'
+#' @examples
+sk_feature_extraction <-
+  function() {
+    sklearn <- import_sklearn(assign_to_environment = F)
+    obj <-
+      sklearn$feature_extraction
+    obj
+  }
+
 #' SK Neural Net
 #' \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.neural_network}{Neural Network functions}
 #' \href{https://scikit-learn.org/stable/modules/neural_networks_supervised.html#neural-networks-supervised}{Neural Network examples}
