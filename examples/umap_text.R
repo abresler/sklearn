@@ -12,7 +12,7 @@ sk <- import_sklearn()
 skf <- sk_feature_extraction()
 
 vectorizer  <-
-  skf$text$CountVectorizer(min_df=10L, stop_words='english')
+  skf$text$CountVectorizer(min_df = 10L, stop_words = 'english')
 
 
 count_data =
@@ -20,10 +20,10 @@ count_data =
 
 count_data
 umap  <- import("umap")
-mapper = umap$UMAP(metric="euclidean")
+mapper = umap$UMAP(metric = "euclidean")
 d <- mapper$fit(X = count_data)
 df_ids <- tibble(name = news$target_names,
-       id = news$target %>% unique() %>% sort())
+                 id = news$target %>% unique() %>% sort())
 count_data %>% str
 
 df_umap <- d$embedding_ %>%
@@ -40,12 +40,10 @@ df_umap %>%
 
 df_umap %>%
   sample_n(20) %>%
-  hc_xy(
-    x = "umap1",
-    y = "umap2",
-    title = "News20 UMAP",
-    type = "euclidean distance -- in R"
-  )
+  hc_xy(x = "umap1",
+        y = "umap2",
+        title = "News20 UMAP",
+        type = "euclidean distance -- in R")
 
 df_umap %>%
   rename(g = name) %>%
