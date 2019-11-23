@@ -3,7 +3,6 @@
 \docType{package}
 \name{sklearn}
 \alias{sklearn}
-\alias{sklearn-package}
 \title{R port of the Python scikit-learn module}
 \description{
 R port of the Python scikit-learn module

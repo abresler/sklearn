@@ -8,6 +8,9 @@
 \usage{
 sk_multi_class()
 }
+\value{
+
+}
 \description{
 SK Multi Class
 \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.multiclass}{multi-class functions}

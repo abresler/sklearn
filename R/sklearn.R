@@ -370,11 +370,9 @@ sk_utils <-
     obj
   }
 
-#' SK SVM Models
-#' \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm}}{SVM functions}
-#' \href{https://scikit-learn.org/stable/modules/svm.html#svm}{SVM examples}
+#' SK SVM
 #'
-#' @return python object
+#' @return
 #' @export
 #'
 #' @examples
@@ -675,10 +673,9 @@ sk_random_projection <-
     obj
   }
 
-#' SK semi-supervised
-#' \href{https://scikit-learn.org/stable/modules/classes.html#module-sklearn.semi_supervised}semi-supervised functions}
+#' SK Semi Supervised
 #'
-#' @return python object
+#' @return
 #' @export
 #'
 #' @examples
