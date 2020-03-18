@@ -4,9 +4,6 @@
 \name{sklearn}
 \alias{sklearn}
 \title{R port of the Python scikit-learn module}
-\description{
-R port of the Python scikit-learn module
-}
 \author{
 Alex Bresler (abreslerb@asbcllc.com)
 }

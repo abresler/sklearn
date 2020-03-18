@@ -11,5 +11,5 @@ URL: https://github.com/abresler/sklearn
 BugReports: https://github.com/abresler/sklearn/issues
 LazyData: true
 Suggests: testthat
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 Imports: purrr, reticulate, tibble, dplyr
