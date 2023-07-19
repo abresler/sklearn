@@ -6,9 +6,6 @@
 \usage{
 sk_svm()
 }
-\value{
-
-}
 \description{
 SK SVM
 }

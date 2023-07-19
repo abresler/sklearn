@@ -6,9 +6,6 @@
 \usage{
 sk_semi_supervised()
 }
-\value{
-
-}
 \description{
 SK Semi Supervised
 }
