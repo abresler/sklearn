@@ -2,8 +2,20 @@
 % Please edit documentation in R/sklearn-package.r
 \docType{package}
 \name{sklearn}
+\alias{sklearn-package}
 \alias{sklearn}
 \title{R port of the Python scikit-learn module}
+\description{
+R port of the python scikit-learn module
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/abresler/sklearn}
+  \item Report bugs at \url{https://github.com/abresler/sklearn/issues}
+}
+
+}
 \author{
 Alex Bresler (abreslerb@asbcllc.com)
 }
